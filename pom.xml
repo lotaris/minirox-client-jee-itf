@@ -6,16 +6,16 @@
 
 	<groupId>com.lotaris.minirox.client</groupId>
 	<artifactId>minirox-client-j2ee-itf</artifactId>
-	<version>2.0.0</version>
+	<version>2.0.1</version>
 	
 	<name>Lotaris MiniROX Client Java ITF</name>
 	
 	<packaging>jar</packaging>
 
 	<properties>
-		<lotaris.test.framework.itf.version>1.0.0</lotaris.test.framework.itf.version>
-		<lotaris.rox.client.itf.version>2.0.1</lotaris.rox.client.itf.version>
-		<lotaris.rox.mini.client.core.version>2.0.0</lotaris.rox.mini.client.core.version>
+		<lotaris.test.framework.itf.version>2.0.0</lotaris.test.framework.itf.version>
+		<lotaris.rox.client.itf.version>2.0.2</lotaris.rox.client.itf.version>
+		<lotaris.rox.mini.client.junit.version>2.0.0</lotaris.rox.mini.client.junit.version>
 	</properties>
 
 	<build>
@@ -78,8 +78,8 @@
 				<plugins>
 					<plugin>
 						<groupId>com.lotaris.maven.rox.plugins</groupId>
-						<artifactId>maven-rox-junit-plugin</artifactId>
-						<version>${lotaris.rox.maven.junit.version}</version>
+						<artifactId>rox-junit-maven-plugin</artifactId>
+						<version>2.0.2</version>
 						<executions>
 							<execution>
 								<goals>
@@ -101,8 +101,8 @@
 		</dependency>
 		<dependency>
 			<groupId>com.lotaris.minirox.client</groupId>
-			<artifactId>minirox-client-java-core</artifactId>
-			<version>${lotaris.rox.mini.client.core.version}</version>
+			<artifactId>minirox-client-junit</artifactId>
+			<version>${lotaris.rox.mini.client.junit.version}</version>
 		</dependency>
 
 		<dependency>
